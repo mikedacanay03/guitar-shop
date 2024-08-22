@@ -111,6 +111,9 @@ header .navbar {
   transition: 0.2s ease;
   
 }
+.hero-section .content p, h2 {
+  display: none;
+}
 
 .hero-section .content button:hover {
   color: white;
@@ -217,4 +220,60 @@ footer ul li {
   .hero-section .content button {
     padding: 9px 18px;
   }
+  .content button {
+    position: absolute;
+    top: 80%;
+    right: 40%;
+  }
+
+  footer {
+    height: 200px;
+    background-image: cover; 
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 3rem; */
+  }
+  footer ul li {
+    list-style: none;
+    font-size: 1rem;
+    
+  }
 }
+@media (max-width: 596px) {
+
+  .hero-section{
+    background-color: rgb(24, 21, 21); 
+    background-image: none;
+    
+  }
+
+  .hero-section .content{
+    width: 90%;
+    position: absolute;
+    bottom:30%;
+    
+  }
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+    display: block;
+    
+  }
+  .hero-section .content p {
+    font-size: 1.2rem;
+    color: #fefefe;
+    display: block;
+  }
+
+  .hero-section .content button {
+    /* font-size: 1.2rem;
+    color: #fefefe; */
+    position: absolute;
+    top: 100%;
+  }
+}
+
